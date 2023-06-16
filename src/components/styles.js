@@ -13,9 +13,9 @@ const styles = StyleSheet.create({
         height: '100%'
     },
     imagem: {
-        height: 150,
+        height: '100%',
         width: '100%',
-        borderRadius: 10,
+        paddingRadius: 10,
     },
     infoItem: {
         width: '70%',

@@ -4,19 +4,19 @@ import Card from "../../components/cardCompra";
 export default function Catalogo(){
     const Itens = [
         {
-            nome: 'Mjolnir',
-            desc: 'Mjolnir, um martelo lendário usado pelo filho de Odin, Thor. Muitos temem seu poder e peso imensurável, dizem que só os digos conseguem erguê-lo. Com raios e trovões, o portador desse martelo de guerra põe medo no coração dos inimigos!',
-            uri: 'https://i.redd.it/pk54k1wm49b81.jpg',
+            nome: 'Espada Élfica',
+            desc: 'Uma espada forjada pelos elfos',
+            uri: 'https://www.crosster.com.br/image/cache/catalog/UC3100%20(2)-1000x1000.jpg',
         },
         {
-            nome: 'Ampulheta de Zhonya',
-            desc: 'Uma ampulheta mágica usada pela bruxa Zhonya, quem toca sua estrutura de vidro sente o controle do próprio tempo nas mãos. Com ela o usuário pode entrar em estado de êxtase e se congelar no tempo, ficando completamente intocável e imutável.',
-            uri: 'https://wiki.runarcana.org/images/thumb/3/31/Zhonya%27s_Hourglass_item_HD.png/150px-Zhonya%27s_Hourglass_item_HD.png',
+            nome: 'Varinha de Ouro',
+            desc: 'Uma varinha poderosa',
+            uri: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTCCcTLTjdGfTUyvZS1eQLt_WRWEm-5V8bOJA&usqp=CAU',
         },
         {
-            nome: 'Ocarina do Tempo',
-            desc: 'A ocarina usada por um herói do passado, para salvar a princesa Zelda. Com uma sequência certa de notas, essa ocarina pode abrir caminhos, adormecer inimigos e fugir de lutas. Nas mãos de um bardo, ela pode ser usada para fortalecer aliados e dar desvantagens aos inimigos.',
-            uri: 'https://pm1.narvii.com/6477/27f8af79b7c7b5202459cd54fba92d9507f05079_00.jpg',
+            nome: 'Amuleto de Proteção',
+            desc: 'Uma varinha poderosa',
+            uri: 'https://www.google.com/url?sa=i&url=https%3A%2F%2Fblue-phoenix-rpg.fandom.com%2Fpt-br%2Fwiki%2FAmuletos_dos_Oito&psig=AOvVaw1NYxgvuaOmO0LQXEi778y8&ust=1682396157703000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCJjDjK3Uwf4CFQAAAAAdAAAAABAD',
         },
       ];
     return(
@@ -30,8 +30,8 @@ export default function Catalogo(){
 
 const styles = StyleSheet.create({
     container: {
-      flex: 1,
       alignItems: 'center',
-      backgroundColor: '#fff',
+      justifyContent: 'center',
+      backgroundColor: 'gray',
     },
   });
