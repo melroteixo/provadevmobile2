@@ -1,20 +1,30 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { NavigationContainer, StackActions } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet } from 'react-native';
+
+import CadastrarUsuario from './src/pages/cadastro/cadastrarUsuario';
+import Catalogo from './src/pages/catalogo/menuItens';
+import Dashboard from './src/pages/dashBoard/usuarioDashboard';
+import Login from './src/pages/login/loginPage';
+import RedefinirSenha from './src/pages/recuperarSenha/recuperacaodeSenhas';
+
+const Stack = createNativeStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    <NavigationContainer style={styles.fundo}>
+      <Stack.Navigator initialRouteName="Login">
+        <Stack.Screen name="Login" component={Login} options={{headerShown: false}}/>
+        <Stack.Screen name="MudarSenha" component={RedefinirSenha}/>
+        <Stack.Screen name="Registro" component={CadastrarUsuario}/>
+        <Stack.Screen name="Catalogo" component={Catalogo}/>
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
+  fundo: {
     backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
   },
 });
